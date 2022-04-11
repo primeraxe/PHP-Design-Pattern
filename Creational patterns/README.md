@@ -16,3 +16,5 @@ Factory Method définit une méthode qui doit être utilisée pour créer des ob
   
 Prenons un exemple, on a la classe ProductCommand qui gère les commandes de produits. Chaque fois qu’un nouveau produit est commandée, nous appelons la méthode ‘command’ et passons le type de produit en paramètre (type « a » ou « b »). La méthode ‘make’ crée ensuite un nouvel objet ‘prod’ (basé sur le paramètre) et enfin la méthode ‘command’ ajoute l’objet nouvellement créé au tableau $prodCmd qui stocke la liste des produits commandées.
 
+##  Static Factory
+Ce pattern est similaire au pattern Abstract Factory, ce pattern est utilisé pour créer une série d’objets. La différence entre cela et le pattern Abstract Factory est que le pattern Static Factory utilise une seule méthode statique pour créer tous les types d’objets qu’il peut créer.
